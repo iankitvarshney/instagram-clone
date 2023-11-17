@@ -15,3 +15,8 @@ input,
 button {
   font-family: "Poppins", sans-serif;
 }
+
+a {
+  color: #000;
+  text-decoration: none;
+}

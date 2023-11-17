@@ -10,3 +10,8 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
 }
+
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}

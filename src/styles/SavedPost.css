@@ -1,0 +1,22 @@
+.saved-post {
+  height: 310px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.saved-post .post-image {
+  border-radius: 0.4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.saved-post .post-image img {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

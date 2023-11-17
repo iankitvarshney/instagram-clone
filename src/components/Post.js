@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addPost, removePost } from "../utils/savedPostsSlice";
 import {
+  BookmarkFillIcon,
   BookmarkIcon,
   CommentIcon,
   HeartFillIcon,
@@ -8,11 +11,14 @@ import {
 } from "../icons";
 import "../styles/Post.css";
 
-const Post = ({ caption, imageUrl, likes, profileImageUrl, username }) => {
+const Post = ({ id, caption, imageUrl, likes, profileImageUrl, username }) => {
   const [likeCount, setLikeCount] = useState(likes);
   const [isLiked, setIsLiked] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
   const [text, setText] = useState("");
   const [comments, setComments] = useState([]);
+
+  const dispatch = useDispatch();
 
   return (
     <div className="post">
@@ -45,8 +51,24 @@ const Post = ({ caption, imageUrl, likes, profileImageUrl, username }) => {
           </button>
         </div>
         <div className="right-buttons">
-          <button>
-            <BookmarkIcon />
+          <button
+            onClick={() => {
+              dispatch(
+                isSaved
+                  ? removePost(id)
+                  : addPost({
+                      id: id,
+                      caption: caption,
+                      imageUrl: imageUrl,
+                      likes: likes,
+                      profileImageUrl: profileImageUrl,
+                      username: username,
+                    })
+              );
+              setIsSaved(!isSaved);
+            }}
+          >
+            {isSaved ? <BookmarkFillIcon /> : <BookmarkIcon />}
           </button>
         </div>
       </div>

@@ -24,6 +24,7 @@ const PostContainer = () => {
         return (
           <Post
             key={post.id}
+            id={post.id}
             caption={post.alt_description}
             imageUrl={post.urls.regular}
             likes={post.likes}

@@ -1,0 +1,60 @@
+.signin-page {
+  border: 1px solid gainsboro;
+  width: 400px;
+  margin: 5rem auto;
+  padding: 2rem 0.4rem;
+  text-align: center;
+}
+
+.signin-page h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.signin-page h3 {
+  color: rgb(105, 105, 105);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.signin-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-page form input {
+  border: 1px solid gainsboro;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.4rem;
+  outline: none;
+}
+
+.signin-page .error-message p {
+  color: red;
+}
+
+.signin-page form button {
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+  margin: 2rem 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.signin-page p {
+  font-size: 1.4rem;
+}
+
+.signin-page p a {
+  color: #0095f6;
+  font-weight: 500;
+}

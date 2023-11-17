@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import SavedPosts from "./components/SavedPosts";
 import "./App.css";
+import SignupPage from "./components/SignupPage";
+import SigninPage from "./components/SigninPage";
 
 const App = () => {
   return (
@@ -31,6 +33,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/saved",
         element: <SavedPosts />,
+      },
+      {
+        path: "/login",
+        element: <SigninPage />,
+      },
+      {
+        path: "/signup",
+        element: <SignupPage />,
       },
     ],
   },

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addPost, removePost } from "../utils/savedPostsSlice";
 import {
   BookmarkFillIcon,
@@ -17,6 +17,8 @@ const Post = ({ id, caption, imageUrl, likes, profileImageUrl, username }) => {
   const [isSaved, setIsSaved] = useState(false);
   const [text, setText] = useState("");
   const [comments, setComments] = useState([]);
+
+  const userName = useSelector((store) => store.user.username);
 
   const dispatch = useDispatch();
 
@@ -84,7 +86,7 @@ const Post = ({ id, caption, imageUrl, likes, profileImageUrl, username }) => {
       <div className="comment-container">
         {comments?.map((comment, index) => (
           <div key={index} className="comment">
-            <h3>{username}</h3>
+            <h3>{userName}</h3>
             <p>{comment}</p>
           </div>
         ))}

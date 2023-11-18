@@ -1,3 +1,9 @@
 .app {
   display: flex;
 }
+
+@media (max-width: 680px) {
+  .app {
+    display: unset;
+  }
+}

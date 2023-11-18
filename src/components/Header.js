@@ -66,10 +66,10 @@ const Header = () => {
             </div>
           </Link>
         )}
-        <div className="nav-item">
+        {/* <div className="nav-item">
           <MenuIcon />
           <p>Menu</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

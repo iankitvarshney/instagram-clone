@@ -1,6 +1,10 @@
 .saved-post {
-  height: 310px;
-  width: 310px;
+  width: 30vw;
+  height: 30vw;
+  max-height: 310px;
+  min-height: 220px;
+  max-width: 310px;
+  min-width: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +23,11 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 900px) {
+  .saved-post {
+    height: 20vw;
+    width: 20vw;
+  }
 }

@@ -58,3 +58,16 @@
   color: #0095f6;
   font-weight: 500;
 }
+
+@media (max-width: 450px) {
+  .signin-page {
+    width: 95vw;
+    padding: 2rem 1rem;
+  }
+  .signin-page form {
+    width: 100%;
+  }
+  .signin-page form input {
+    max-width: 100%;
+  }
+}

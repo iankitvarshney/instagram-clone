@@ -1,7 +1,7 @@
 .saved-posts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-self: flex-start;
   gap: 1rem;
   padding: 4rem;

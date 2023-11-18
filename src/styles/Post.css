@@ -2,7 +2,7 @@
   border-bottom: 1px solid gainsboro;
   width: 460px;
   padding: 2rem 0 1rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
 
 .post .post-profile {
@@ -129,4 +129,23 @@
 .comment-container .comment p {
   font-size: 1.4rem;
   white-space: wrap;
+}
+
+@media (max-width: 500px) {
+  .post {
+    width: 100%;
+  }
+  .post .post-image {
+    border: none;
+    height: 100vw;
+  }
+  .post .post-stats {
+    padding: 0 1rem;
+  }
+  .post .post-content {
+    padding: 0 1rem;
+  }
+  .post .post-comment-box {
+    padding: 0 1rem;
+  }
 }

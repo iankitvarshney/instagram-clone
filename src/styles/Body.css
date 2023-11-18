@@ -2,11 +2,6 @@
   width: calc(100% - 240px);
 }
 
-.post-container {
-  width: 500px;
-  margin: auto;
-}
-
 @media (max-width: 750px) {
   .body {
     width: calc(100% - 180px);
@@ -16,11 +11,5 @@
 @media (max-width: 680px) {
   .body {
     width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .post-container {
-    width: 100vw;
   }
 }
